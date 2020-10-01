@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap');
+body {
+  font-family: 'Gruppo', cursive !important;
+  width: 100%;
+}
+
+.header {
+  float: left;
+  width: 100%;
+}
+
+.topo {
+  background: rgb(175, 127, 80);
+  margin: 0 !important;
+}
+
+.hello-client {
+  float: left;
+  margin-left: 50px;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+#rede-social {
+  margin-top: 5px;
+  display: flex;
+  float: right;
+  color: rgb(255, 255, 255);
+}
+
+#rede-social a {
+  padding-left: 10px;
+}
+
+.fa-2x {
+  font-size: 1.5em !important;
+}
+
+.buscar {
+  width: 200px;
+  float: right;
+}
+
+.pesquisa {
+  margin-top: 10px !important;
+  margin-right: 10px !important;
+  margin-left: 5px;
+  color: rgb(175, 127, 80) !important;
+}
+
+.login {
+  margin-top: 20px;
+}
+
+.btn-secondary, .dropdown-item {
+  color: rgb(175, 127, 80) !important;
+  font-size: 20px !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.btn-secondary:active {
+  box-shadow: none !important;
+}
+
+.logo-home {
+  text-align: center;
+}
+
+.logo-home h1 {
+  font-size: 25px;
+  padding-top: 9px;
+  color: black;
+}
+
+.logo-home a {
+  display: inline-flex;
+}
+
+.navegacao {
+  text-align: center !important;
+}
+
+.itens-menu {
+  justify-content: center;
+}
+
+.itens-menu li {
+  padding-left: 15px;
+}
+
+.itens-menu a {
+  color: rgb(175, 127, 80) !important;
+  font-weight: bolder;
+}
+
+.itens-menu a:hover {
+  color: white!important;
+  font-weight: bolder;
+  background-color: rgb(175, 127, 80);
+}
+
+#pedido {
+  color: rgb(175, 127, 80);
+  font-size: 1.5em;
+  margin-right: 35px;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.flex h1 {
+  font-size: 25px;
+  padding-left: 10px;
+  color: rgb(175, 127, 80);
+  font-weight: bolder;
+}
+
+.flex p {
+  font-size: 25px;
+  padding-left: 10px;
+  color: rgb(175, 127, 80);
+}
+
+.btn-comprar {
+  background-color: rgb(175, 127, 80) !important;
+  text-align: center !important;
+  padding: 10px 100px 10px 100px !important;
+  cursor: pointer !important;
+  color: white !important;
+  border: none !important;
+  margin-left: 40px;
+}
+
+/* CSS Flex */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex>div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.rodape {
+  background: transparent);
+  color: rgb(175, 127, 80);
+  font-size: 25px;
+}
+
+.rodape p {
+  margin-top: 25px;
+}
+
+.rodape a {
+  color: rgb(175, 127, 80);
+}
+
+.rodape a:hover {
+  text-decoration: none;
+}
+
+.rodape img {
+  margin-top: -3px;
+}
+
+.texto {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #rede-social {
+    display: none;
+  }
+  .hello-client {
+    margin: 0;
+    text-align: center;
+  }
+}
