@@ -128,6 +128,32 @@
   </nav>
 
 
+  <h3>Meus pedidos</h3>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Produto</th>
+        <th scope="col">Quantidade</th>
+        <th scope="col">Valor Unitário</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="produto"></td>
+        <td id="itens"></td>
+        <td id="unitario"></td>
+        <td id="total"></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+  <button type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
+
 
   <footer class="rodape">
     <div class="row">

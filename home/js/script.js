@@ -58,3 +58,14 @@ function getUrlVars(id) {
 
 var nome = getUrlVars('pessoa');
 $('#nome-visitante').text(nome);
+
+
+//Função 
+function AddCarrinho(produto, qtd, valor, posicao) {
+  localStorage.setItem("produto" + posicao, produto);
+  localStorage.setItem("qtd" + posicao, qtd);
+  var total = valor * qtd;
+  localStorage.setItem("total" + posicao, total);
+  localStorage.setItem("unitario" + posicao, valor);
+  alert("Produto adicionado ao carrinho!");
+}
