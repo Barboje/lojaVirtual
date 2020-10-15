@@ -107,6 +107,25 @@ h3 {
   font-size: 2.5em !important;
   text-align: center;
   margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+button {
+  margin-top: 1.5em !important;
+}
+
+th {
+  background-color: rgb(175, 127, 80);
+  color: white;
+}
+
+td {
+  color: rgb(175, 127, 80);
+  font-size: 20px;
+}
+
+.text-right {
+  color: black !important;
 }
 
 .rodape {

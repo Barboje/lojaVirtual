@@ -121,7 +121,7 @@
     </div>
 
     <div class="pedidos">
-      <a href="../meusPedidos/meus-pedidos.html" target="_blank">
+      <a href="../meusPedidos/meus-pedidos.html">
         <i id="pedido" title="meus pedidos" class="fas fa-shopping-cart"></i>
       </a>
     </div>
@@ -138,49 +138,70 @@
         onmouseout="voltaFoto('troca', 'img/vestido1-frente.JPG')">
       <h1>vestido estampado havaí</h1>
       <p>R$ 210,00 - Quantidade</p>
+
       <input class="quantidade" type="number" value="1" min="1" max="10" id="qtd1">
       <a><button type="button" id="adicionar1" id="produto1"
-          onclick="AddCarrinho('Vestido', document.getElementById('qtd1').value, '210.00', 1)"
+          onclick="AddCarrinho('vestido estampado havaí', document.getElementById('qtd1').value, '210.00', 1)"
           class="btn btn-outline-primary btn-comprar">Comprar</button></a>
+
+
     </div>
     <div class="produto" data-nome="vestido preto" data-categoria="vestido">
       <img src="./img/vestido2-frente.JPG" id="troca2" onmousemove="trocaFoto('troca2', 'img/vestido2-verso.jpg')"
         onmouseout="voltaFoto('troca2', 'img/vestido2-frente.JPG')">
       <h1>vestido preto</h1>
-      <p>R$ 180,00</p>
-      <a><button type="button" class="btn btn-outline-primary btn-comprar">Comprar</button></a>
+      <p>R$ 180,00 - Quantidade</p>
+
+
+      <input class="quantidade" type="number" value="1" min="1" max="10" id="qtd2">
+      <a><button type="button"
+          onclick="AddCarrinho('vestido preto', document.getElementById('qtd2').value, '180.00', 2)"
+          class="btn btn-outline-primary btn-comprar">Comprar</button></a>
+
+
     </div>
     </div>
     <div class="produto" data-nome="vestido verde" data-categoria="vestido">
       <img src="./img/vestido3-frente.JPG" id="troca3" onmousemove="trocaFoto('troca3', 'img/vestido3-verso.jpg')"
         onmouseout="voltaFoto('troca3', 'img/vestido3-frente.JPG')">
       <h1>vestido verde</h1>
-      <p>R$ 185,00</p>
-      <a><button type="button" class="btn btn-outline-primary btn-comprar">Comprar</button></a>
+      <p>R$ 185,00 - Quantidade</p>
+      <input class="quantidade" type="number" value="1" min="1" max="10" id="qtd3">
+      <a><button type="button"
+          onclick="AddCarrinho('vestido verde', document.getElementById('qtd3').value, '185.00', 3)"
+          class="btn btn-outline-primary btn-comprar">Comprar</button></a>
     </div>
     </div>
     <div class="produto" data-nome="blusa laranja" data-categoria="blusa">
       <img src="./img/blusa1-frente.JPG" id="troca4" onmousemove="trocaFoto('troca4', 'img/blusa1-verso.jpg')"
         onmouseout="voltaFoto('troca4', 'img/blusa1-frente.JPG')">
       <h1>blusa laranja</h1>
-      <p>R$ 170,00</p>
-      <a><button type="button" class="btn btn-outline-primary btn-comprar">Comprar</button></a>
+      <p>R$ 170,00 - Quantidade</p>
+      <input class="quantidade" type="number" value="1" min="1" max="10" id="qtd4">
+      <a><button type="button"
+          onclick="AddCarrinho('blusa laranja', document.getElementById('qtd4').value, '170.00', 4)"
+          class="btn btn-outline-primary btn-comprar">Comprar</button></a>
     </div>
     </div>
     <div class="produto" data-nome="blusa cigana azul" data-categoria="blusa">
       <img src="./img/blusa2-frente.JPG" id="troca5" onmousemove="trocaFoto('troca5', 'img/blusa3-frente.jpg')"
         onmouseout="voltaFoto('troca5', 'img/blusa2-frente.JPG')">
       <h1>blusa cigana azul</h1>
-      <p>R$ 170,00</p>
-      <a><button type="button" class="btn btn-outline-primary btn-comprar">Comprar</button></a>
+      <p>R$ 170,00 - Quantidade</p>
+      <input class="quantidade" type="number" value="1" min="1" max="10" id="qtd5">
+      <a><button type="button"
+          onclick="AddCarrinho('blusa cigana azul', document.getElementById('qtd5').value, '170.00', 5)"
+          class="btn btn-outline-primary btn-comprar">Comprar</button></a>
     </div>
     </div>
     <div class="produto" data-nome="colar pedra" data-categoria="acessorio">
       <img src="./img/colar-frente.JPG" id="troca6" onmousemove="trocaFoto('troca6', 'img/colar-verso.jpg')"
         onmouseout="voltaFoto('troca6', 'img/colar-frente.JPG')">
       <h1>colar pedra</h1>
-      <p>R$ 120,00</p>
-      <a><button type="button" class="btn btn-outline-primary btn-comprar">Comprar</button></a>
+      <p>R$ 120,00 - Quantidade</p>
+      <input class="quantidade" type="number" value="1" min="1" max="10" id="qtd6">
+      <a><button type="button" onclick="AddCarrinho('colar pedra', document.getElementById('qtd6').value, '120.00', 6)"
+          class="btn btn-outline-primary btn-comprar">Comprar</button></a>
     </div>
     </div>
   </section>

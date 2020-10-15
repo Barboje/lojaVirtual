@@ -83,7 +83,7 @@
   <div class="container">
     <div class="row logo-home">
       <div class="col-md-12">
-        <a onclick="exibirTodosProdutos()" class="navbar-brand" href="#">
+        <a class="navbar-brand" href="../home/index.html">
           <img src="../home/img/logo-defamarine.png" width="50" height="50" alt="" loading="lazy">
           <h1>DEFAMARINE BRASIL</h1>
         </a>
@@ -130,7 +130,7 @@
 
   <h3>Meus pedidos</h3>
 
-  <table class="table table-bordered">
+  <table class="container table table-bordered">
     <thead>
       <tr>
         <th scope="col">Produto</th>
@@ -139,20 +139,20 @@
         <th scope="col">Total</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td id="produto"></td>
-        <td id="itens"></td>
-        <td id="unitario"></td>
-        <td id="total"></td>
-      </tr>
+    <tbody id="tabela-produto">
+
     </tbody>
   </table>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-right">
+        <button type="button" onclick=" localStorage.clear(); location.reload();"> Limpar
+          carrinho
+        </button>
+      </div>
+    </div>
 
-
-
-
-  <button type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
+  </div>
 
 
   <footer class="rodape">

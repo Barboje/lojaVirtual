@@ -4,18 +4,30 @@ var valor = 0; // variável que irá receber o preço do produto convertido em F
 
 for (i = 1; i <= 99; i++) // verifica até 99 produtos registrados na localStorage
 {
-  var prod = localStorage.getItem("produto" + i + ""); // verifica se há recheio nesta posição. 
+  var prod = localStorage.getItem("produto_" + i + ""); // verifica se há recheio nesta posição. 
   if (prod != null) {
-    // exibe os dados da lista dentro da div itens
-    document.getElementById("itens").innerHTML += localStorage.getItem("qtd" + i);
-    document.getElementById("produto").innerHTML += localStorage.getItem("produto" + i);
-    document.getElementById("total").innerHTML += "R$: " + localStorage.getItem("total" + i);
-    document.getElementById("unitario").innerHTML += "R$: " + localStorage.getItem("unitario" + i);
 
-    // calcula o total dos recheios
-    valor = parseFloat(localStorage.getItem("valor" + i)); // valor convertido com o parseFloat()
-    total = (total + valor); // arredonda para 2 casas decimais com o .toFixed(2)
+    var produto = JSON.parse(localStorage.getItem("produto_" + i));
+    
+    var linha_produto = "<tr>"
+    + "<td>" + produto.prod + "</td>"
+    + "<td>" + produto.qtd + "</td>"
+    + "<td> R$" + produto.valor_unitario.toFixed(2) + "</td>"
+    + "<td class='text-right right'> R$" + produto.valor_total.toFixed(2) + "</td>"
+    + "</tr>";
+
+    document.getElementById("tabela-produto").innerHTML += linha_produto;
+    total += produto.valor_total;
   }
 }
+
+
+
+var linha_total = "<tr>"
++ "<td colspan='4' class='text-right right'>Total: R$ " + total.toFixed(2) + "</td>"
++ "</tr>";
+
+document.getElementById("tabela-produto").innerHTML += linha_total;
+
 // exibe o total dos recheios
 // document.getElementById("total").innerHTML = total.toFixed(2);

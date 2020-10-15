@@ -61,11 +61,15 @@ $('#nome-visitante').text(nome);
 
 
 //Função 
-function AddCarrinho(produto, qtd, valor, posicao) {
-  localStorage.setItem("produto" + posicao, produto);
-  localStorage.setItem("qtd" + posicao, qtd);
-  var total = valor * qtd;
-  localStorage.setItem("total" + posicao, total);
-  localStorage.setItem("unitario" + posicao, valor);
+function AddCarrinho(produto, quantidade, valor, posicao) {
+
+  var itemCarrinho = {
+    prod: produto,
+    qtd: quantidade,
+    valor_unitario: parseFloat(valor),
+    valor_total: valor * quantidade
+  };
+
+  localStorage.setItem("produto_" + posicao, JSON.stringify(itemCarrinho));
   alert("Produto adicionado ao carrinho!");
 }
